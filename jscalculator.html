@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript calculator</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div id="calculator">
+        <form>
+            <input type="text" id="display" disabled>
+            <br>
+
+            <div id="left">
+
+                <input type="button" value="C" id="keys" onclick="toScreen('c')">
+                <input type="button" value="CE" id="keys" onclick="backspace()">
+                <input type="button" value="/" id="keys" onclick="toScreen('/')">
+                
+
+                <br>
+
+                <input type="button" value="7" id="keys" onclick="toScreen('7')" >
+                <input type="button" value="8" id="keys" onclick="toScreen('8')" >
+                <input type="button" value="9" id="keys" onclick="toScreen('9')" >
+                
+
+                 <br>
+
+                 <input type="button" value="4" id="keys" onclick="toScreen('4')" >
+                <input type="button" value="5" id="keys" onclick="toScreen('5')" >
+                <input type="button" value="6" id="keys" onclick="toScreen('6')" >
+                 
+
+                 <br>
+
+                 <input type="button" value="1" id="keys" onclick="toScreen('1')" >
+                <input type="button" value="2" id="keys" onclick="toScreen('2')" >
+                <input type="button" value="3" id="keys" onclick="toScreen('3')" >
+                
+
+                <br>
+
+                <input type="button" value="0" id="zero" onclick="toScreen('0')" >
+                <input type="button" value="." id="keys" onclick="toScreen('.')" >
+
+            </div>
+            <div id="right">
+                <input type="button" value="X" id="keys" onclick="toScreen()">
+                <br>
+                 <input type="button" value="-" id="keys" onclick="toScreen('-')" >
+                 <br>
+                 <input type="button" value="+" id="keys" onclick="toScreen('+')" >
+                 <br>
+                 <input type="button" value="=" id="equal" onclick="ans()" >
+
+
+            </div>
+
+        </form>
+    </div>
+
+    <script type="text/javascript" src="calculator.js"></script>
+</body>
+</html>
